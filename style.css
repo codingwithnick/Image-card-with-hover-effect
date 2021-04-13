@@ -1,0 +1,109 @@
+/* COPYRIGHT- CODING WITH NICK*/
+
+/* # ⚙️ Technology Used
+1. HTML5
+2. CSS3
+
+# 🎓 Access this vedio
+[Click Here] https://www.youtube.com/channel/UCsseF0Swqs5FsXXtEXo1m_A
+
+## 👏 Support Developer
+1. Subscribe & Share my YouTube Channel - https://www.youtube.com/channel/UCsseF0Swqs5FsXXtEXo1m_A
+2. Add a Star 🌟  to this 👆 Repository */
+
+/************************************************/
+
+
+.container{
+    position: relative;
+    width: 1000px;
+    margin: 150px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 40px;
+}
+.container .card{
+    position: relative;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 20px 2px rgba(0,0,0,0.2);
+}
+.container .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.container .card:hover .img-box{
+    opacity: 0.5;
+}
+.container .card .img-box img{
+    width: 100%;
+}
+.container .card .content{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    bottom: 0;
+}
+.container .card:nth-child(1) .content{
+    background: linear-gradient(0deg,orange, transparent);
+}
+.container .card:nth-child(2) .content{
+    background: linear-gradient(0deg,purple, transparent);
+}
+.container .card:nth-child(3) .content{
+    background: linear-gradient(0deg,brown, transparent);
+}
+.container .card .content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+}
+.container .card .content h2 span{
+    color: yellow;
+    font-size: 16px;
+
+}
+.container .card .content p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+
+}
+.container .card .content ul{
+    display:flex ;
+    margin: 20px 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .card .content ul li{
+    list-style: none;
+}
+.container .card .content ul li a{
+    color: white;
+    padding: 0 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
